@@ -4,30 +4,40 @@
 	<meta charset="utf-8">
 	<title>MSU Sci-Fi Club</title>
 	<link rel="stylesheet" href="MSU-Sci-Fi-Club.css">
+	<script>
+		function openSite(evt,siteName){
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for(i = 0;i < tabcontent.length;i++){
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for(i = 0;i < tablinks.length;i++){
+				tablinks[i].className = tablinks[i].className.replace(" active","");
+			}
+			document.getElementById(siteName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
 </head>
 <body>
 <h1 style="border:white;border-width:10px; border-style:solid;">Sci-Fi & Fantasy Club</h1>
-<div class="navbar">
-	<div class="dropdown">
-		<button class="dropbtn">Games<i class="fa fa-caret-down"></i></button>
-		<div class="dropdown-content">
-			<a href="game1.html">Game 1</a>
-			<a href="game2.html">Game 2</a>
-			<a href="game3.html">Game 3</a>
-		</div>
-	</div>
-	<div class="dropdown">
-		<button class="dropbtn">Member Information<i class="fa fa-caret-down"></i></button>
-		<div class="dropdown-content">
-			<a href="memberInformationSite.html">Member Information Page</a>
-		</div>
-	</div>
-	<div class="dropdown">
-		<button class="dropbtn">Schedule<i class="fa fa-caret-down"></i></button>
-		<div class="dropdown-content">
-			<a href="schedule.html">Science Fiction Club Schedule of Events Page</a>
-		</div>
-	</div>
+<div class="tab">
+	<button class="tablinks" onclick="openSite(event,'Games')">Games</button>
+	<button class="tablinks" onclick="openSite(event,'Members')">Members</button>
+	<button class="tablinks" onclick="openSite(event,'Schedule')">Schedule</button>
+</div>
+<div id="Games" class="tabcontent">
+	<h3>Games</h3>
+	<p>Please click <a href="msuSciFiGames.html">here</a> to see a list of games our website offers, made by us originally!</p>
+</div>
+<div id="Members" class="tabcontent">
+	<h3>Members</h3>
+	<p>Please click <a href="msuSciFiMembers.html">here</a> to see a webpage containing the information of each of our members.</p>
+</div>
+<div id="Schedule" class="tabcontent">
+	<h3>Schedule</h3>
+	<p>Please click <a href="msuSciFiSchedule.html">here</a> to see a schedule of events of our club. This schedule will be updated as necessary.</p>
 </div>
 <div id="drBeckImg">
 <h2>We Have this Man!</h2>
