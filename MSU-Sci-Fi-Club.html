@@ -4,6 +4,10 @@
 	<meta charset="utf-8">
 	<title>MSU Sci-Fi Club</title>
 	<style>
+	.dropdown{
+		position: relative;
+		display: inline-block;
+	}
 	h1{
 		text-align: center;
 		background-color: darkblue;
@@ -44,13 +48,92 @@
 		color: white;
 	}
 	#joinFooter{
+		position: relative;
+		top: 600px;
+		left: 100px;
 		background-color: darkblue;
 		color: white;
+	}
+	.navbar{
+		overflow: hidden;
+		background-color: darkblue;
+	}
+	.navbar a{
+		float: left;
+		font-size: 16px;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+	.dropdown{
+		float: left;
+		overflow: hidden;
+	}
+	.dropdown .dropbtn{
+		font-size: 16px;
+		border: none;
+		outline: none;
+		color: white;
+		padding: 14px 16px;
+		background-color: darkblue;
+		font-family: inherit;
+		margin: 0;
+	}
+	.dropdown{
+		width: 33.3%;
+	}
+	.navbar a:hover, .dropdown:hover .dropbtn{
+		background-color: green;
+	}
+	.dropdown-content{
+		display: none;
+		position: absolute;
+		background-color: darkblue;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+	.dropdown-content a{
+		float: none;
+		color: white;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+	.dropdown-content a:hover{
+		background-color: darkblue;
+	}
+	.dropdown:hover .dropdown-content{
+		display: block;
 	}
 </style>
 </head>
 <body>
-<h1>Sci-Fi & Fantasy Club</h1>
+<h1 style="border:white;border-width:10px; border-style:solid;">Sci-Fi & Fantasy Club</h1>
+<div class="navbar">
+	<div class="dropdown">
+		<button class="dropbtn">Games<i class="fa fa-caret-down"></i></button>
+		<div class="dropdown-content">
+			<a href="game1.html">Game 1</a>
+			<a href="game2.html">Game 2</a>
+			<a href="game3.html">Game 3</a>
+		</div>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn">Member Information<i class="fa fa-caret-down"></i></button>
+		<div class="dropdown-content">
+			<a href="memberInformationSite.html">Member Information Page</a>
+		</div>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn">Schedule<i class="fa fa-caret-down"></i></button>
+		<div class="dropdown-content">
+			<a href="schedule.html">Science Fiction Club Schedule of Events Page</a>
+		</div>
+	</div>
+</div>
 <div id="drBeckImg">
 <h2>We Have this Man!</h2>
 <img src="C:\Users\gavin\OneDrive\Pictures\Saved Pictures\drBeck.jpg">
