@@ -48,57 +48,32 @@
 		background-color: darkblue;
 		color: white;
 	}
-	.navbar{
+	.tab{
 		overflow: hidden;
+		border: 5px solid white;
 		background-color: darkblue;
 	}
-	.navbar a{
-		float: left;
-		font-size: 16px;
+	.tab button{
 		color: white;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-	}
-	.dropdown{
+		background-color: inherit;
 		float: left;
-		overflow: hidden;
-	}
-	.dropdown .dropbtn{
-		font-size: 16px;
 		border: none;
 		outline: none;
-		color: white;
+		cursor: pointer;
 		padding: 14px 16px;
-		background-color: darkblue;
-		font-family: inherit;
-		margin: 0;
-	}
-	.dropdown{
+		transition: 0.3s;
 		width: 33.3%;
 	}
-	.navbar a:hover, .dropdown:hover .dropbtn{
+	.tab button:hover{
 		background-color: green;
 	}
-	.dropdown-content{
-		display: none;
-		position: absolute;
-		background-color: darkblue;
-		min-width: 160px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		z-index: 1;
+	.tab button.active{
+		background-color: green;
 	}
-	.dropdown-content a{
-		float: none;
+	.tabcontent{
 		color: white;
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
-		text-align: left;
-	}
-	.dropdown-content a:hover{
-		background-color: darkblue;
-	}
-	.dropdown:hover .dropdown-content{
-		display: block;
+		display: none;
+		padding: 6px 12px;
+		border: 5px solid green;
+		border-top: none;
 	}
