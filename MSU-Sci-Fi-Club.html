@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MSU Sci-Fi Club</title>
+	<link rel="stylesheet" href="MSU-Sci-Fi-Club.css">
+	<script>
+		function openSite(evt,siteName){
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for(i = 0;i < tabcontent.length;i++){
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for(i = 0;i < tablinks.length;i++){
+				tablinks[i].className = tablinks[i].className.replace(" active","");
+			}
+			document.getElementById(siteName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
+</head>
+<body>
+<h1 style="border:white;border-width:10px; border-style:solid;">Sci-Fi & Fantasy Club</h1>
+<div class="tab">
+	<button class="tablinks" onclick="openSite(event,'Games')">Games</button>
+	<button class="tablinks" onclick="openSite(event,'Members')">Members</button>
+	<button class="tablinks" onclick="openSite(event,'Schedule')">Schedule</button>
+</div>
+<div id="Games" class="tabcontent">
+	<h3>Games</h3>
+	<p>Please click <a href="msuSciFiGames.html">here</a> to see a list of games our website offers, made by us originally!</p>
+</div>
+<div id="Members" class="tabcontent">
+	<h3>Members</h3>
+	<p>Please click <a href="Members.html">here</a> to see a webpage containing the information of each of our members.</p>
+</div>
+<div id="Schedule" class="tabcontent">
+	<h3>Schedule</h3>
+	<p>Please click <a href="msuSciFiSchedule.html">here</a> to see a schedule of events of our club. This schedule will be updated as necessary.</p>
+</div>
+<div id="drBeckImg">
+<h2>We Have this Man!</h2>
+<img src="C:\Users\gavin\OneDrive\Pictures\Saved Pictures\drBeck.jpg">
+<li>Programming Wizard</li>
+<li>The club Sponsor</li>
+<li>The Best Computer Science Professor</li>
+<p id="drBeckText">Dr. More Beck</p>
+</div>
+<div id="socialsAndOther">
+<h2><span style="text-decoration:  underline;">Club Socials:</span></h2>
+<li>DIscord: MSU Sci-Fi Club</li>
+<li>Facebook: Murray State SciFi Blub</li>
+<li>Instagram: msu_scifi_club</li>
+<li>Email: msu.scificlub@murraystate.edu</li>
+	<h2><span style="text-decoration:underline">Other Information:</span></h2>
+	<li>We meet in Room 552 In the Business Building at 4pm on Wednesday.</li>
+	<li>Our first meeting of the semester is always a game night & our yearly officer elections.</li>
+	<h2><span style="text-decoration:underline;"><b>Leadership:</b></span></h2>
+	<li><span style="text-decoration:underline;">President: </span>keeps order</li>
+	<li><span style="text-decoration:underline;">Vice President: </span>helps keep order</li>
+	<li><span style="text-decoration:underline;">Secretary: </span>maintains social media</li>
+	<li><span style="text-decoration:underline;">Treasurer: </span>Handles Money</li>
+</div>
+<div id="like">
+	<h2>Do you like:</h2>
+	<li>Anime / Manga?</li>
+	<li>Video Games?</li>
+	<li>Star Wars?</li>
+	<li>Cryptids?</li>
+	<li>Star Trek?</li>
+	<li>Magic the Gathering?</li>
+	<li>Dungeons and Dragons</li>
+	<li>Social Interaction?</li>
+</div>
+<div id="have">
+	<h2>We have:</h2>
+	<li>game nights</li>
+	<li>rant nights</li>
+	<li>Trivia Nights</li>
+	<li>Movie Nights</li>
+	<lI>Fact or Faked nights</lI>
+	<li>Halloween Costume Content</li>
+	<li>And More!</li>
+</div>
+<div id="joinFooter">
+	<h1><b>Join Today!</b></h1>
+</div>
+</body>
+</html>
