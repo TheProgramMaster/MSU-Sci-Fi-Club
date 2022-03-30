@@ -4,28 +4,22 @@
 	}
 	h1{
 		text-align: center;
-<<<<<<< HEAD
 		background-color: black;
 		color: white;
 	}
 	body{
 		background-color: black;
-=======
 		background-color: darkblue;
 		color: white;
 	}
 	body{
 		background-color: darkblue;
->>>>>>> 6bf833412db3a96ad0b6a9d6819c2883e190e2b4
 	}
 	#drBeckImg{
 		text-align: center;
 		float: left;
-<<<<<<< HEAD
 		background-color: black;
-=======
 		background-color: darkblue;
->>>>>>> 6bf833412db3a96ad0b6a9d6819c2883e190e2b4
 		color: white;
 	}
 	#drBeckText{
@@ -34,11 +28,8 @@
 	}
 	#socialsAndOther{
 		float: right;
-<<<<<<< HEAD
 		background-color: black;
-=======
 		background-color: darkblue;
->>>>>>> 6bf833412db3a96ad0b6a9d6819c2883e190e2b4
 		color: white;
 	}
 	#like{
@@ -46,11 +37,8 @@
 		float: left;
 		left: 20px;
 		top: 100px;
-<<<<<<< HEAD
 		background-color: black;
-=======
 		background-color: darkblue;
->>>>>>> 6bf833412db3a96ad0b6a9d6819c2883e190e2b4
 		color: white;
 	}
 	#have{
@@ -58,32 +46,23 @@
 		right: 20px;
 		top: 100px;
 		float: right;
-<<<<<<< HEAD
 		background-color: black;
-=======
 		background-color: darkblue;
->>>>>>> 6bf833412db3a96ad0b6a9d6819c2883e190e2b4
 		color: white;
 	}
 	#joinFooter{
 		position: relative;
 		top: 600px;
 		left: 100px;
-<<<<<<< HEAD
 		background-color: black;
-=======
 		background-color: darkblue;
->>>>>>> 6bf833412db3a96ad0b6a9d6819c2883e190e2b4
 		color: white;
 	}
 	.tab{
 		overflow: hidden;
 		border: 5px solid white;
-<<<<<<< HEAD
 		background-color: black;
-=======
 		background-color: darkblue;
->>>>>>> 6bf833412db3a96ad0b6a9d6819c2883e190e2b4
 	}
 	.tab button{
 		color: white;
@@ -108,12 +87,4 @@
 		padding: 6px 12px;
 		border: 5px solid green;
 		border-top: none;
-<<<<<<< HEAD
 	}
-=======
-<<<<<<< HEAD
-	}
-=======
-	}
->>>>>>> 63f52c813863ed814ecad95d6f11729a4370575c
->>>>>>> 6bf833412db3a96ad0b6a9d6819c2883e190e2b4
