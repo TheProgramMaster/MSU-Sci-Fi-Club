@@ -2,92 +2,89 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Members of the MSU Sci-Fi Club!!!</title>
+	<title>MSU Sci-Fi Club</title>
+	<link rel="stylesheet" href="MSU-Sci-Fi-Club.css">
+	<script>
+		function openSite(evt,siteName){
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for(i = 0;i < tabcontent.length;i++){
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for(i = 0;i < tablinks.length;i++){
+				tablinks[i].className = tablinks[i].className.replace(" active","");
+			}
+			document.getElementById(siteName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
 </head>
-<style>
-	body{
-		background-image: url("https://zsorohome.files.wordpress.com/2019/10/mothman-cartoon.jpeg?w=1024");
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	img{
-		max-width: 50%;
-		max-height: 50%;
-		display: block;
-	}
-	.main-div{
-		background-attachment: scroll;
-		padding: 20px;
-	}
-	.transparent-bg{
-		background: rgba(0,255,0,0.73);
-		padding: 20px;
-		color: #fff;
-		text-align: center;
-		font-size: 26px;
-	}
-	.memberContent{
-		background-attachment: scroll;
-		padding: 20px;
-	}
-	.member{
-		background-color: rgba(0,0,0,0.75);
-		padding: 20px;
-		color: #fff;
-		text-align: center;
-		font-size: 13px;
-		height: 400px;
-	}
-	.memberImages{
-		float: left;
-		width: 400px; 
-		height: 300px;
-	}
-	.memberText{
-		font-size: 40px;
-	}
-</style>
 <body>
-<div class="main-div">
-	<div class="transparent-bg">
-		Members of the Murray State University Sci-Fi Club
-	</div>
+<h1 style="border:white;border-width:10px; border-style:solid;">Sci-Fi & Fantasy Club</h1>
+<div class="tab">
+	<button class="tablinks" onclick="openSite(event,'Games')">Games</button>
+	<button class="tablinks" onclick="openSite(event,'Members')">Members</button>
+	<button class="tablinks" onclick="openSite(event,'Schedule')">Schedule</button>
 </div>
-<div class="memberContent">
-	<div class="member" id="BadgerIce">
-		<img src="https://media.discordapp.net/attachments/538898437505024004/941532977576439858/received_251412813836759.jpeg?width=315&height=612" class="memberImages" alt="Image of Beth">
-		<p class="memberText"><b>This is Beth. She has been a committed member on our chapter. She has recently graduated, though, she remains present in our discord chat and is never afraid to lending a helping hand wherever ideas for club activity is concerned!</b></p>
-	</div>
-	<hr>
-	<div class="member" id="Otis">
-		<img src="https://media.discordapp.net/attachments/854444822474522714/958857853525950476/FB_IMG_1648679901214.jpg?width=624&height=613" class="memberImages" alt="Image of our club President, Ottis Jaggers!">
-		<p class="memberText"><b> This is Otis. He is our club president. He manages every event and makes sure to alert all officers of their responsibilities. He can always be found either working in Fast Track, playing the switch, or bowing before the almight Moth Man!!!!</b></p>
-	</div>
-	<hr>
-	<div class="member" id="Skyler">
-		<img src="https://media.discordapp.net/attachments/854444822474522714/958866131374964757/15957FA0-2CB1-4961-967C-E1A94DCD19EE.jpg?width=726&height=613" class="memberImages" alt="This is Skyler. She brings quite a cheerful demeanor to our club!">
-		<p class="memberText"><b>This is Skyler. She is a criminal justic major. She is pretty laid-back, though, always willing to have fun with the club.</b></p>
-	</div>
-	<hr>
-	<div class="member" id="Toby">
-		<img src="https://media.discordapp.net/attachments/854444822474522714/958859228976676864/643839_gKkGSxYu.png" class="memberImages" alt="This is Toby. She always has insightful wisdom to offer our club!">
-		<p class="memberText"><b>This is Toby. He is also a hard-worker on campus, just like Otis. He has recently graduated, though, is always present during club meetings and willing to chime in when contributing advice on club activities.</b></p>
-	</div>
-	<hr>
-	<div class="member" id="Adam">
-		<img src="https://lh3.googleusercontent.com/an-mdE53dtu_WPTpjyp6PKBCA1iXgdFowbGR7WAG2sf7s8CbcqMtmsBCLYn3oEYOMTg5VEy6Ls5Bw-sk8bZHyP2OOITMVaTrex_zfeT1M9oQ71hqy3LwCiRr5RvfKjtV0NVpA2FkB66tQ1MDAhNoOCEgHQ41Gr9mwgefmOLnK1Jz_QRUoBae1NLOLQ5mzueg6BMYdGC1jvwrrDZg7swU5VtS-RnaL15FyuMDLQSOTY93XMDi4ey7P2vhRsQVMRWL9btaueMjG96rJFUIZjPWHQtnVR7BTrQSj4TuQljsVM_ksmazcb2qV3FmPy1ksoNoHKTG0Gncr2ygIKkD1rRShnWi6CG2EkzYureYebeipBDzI3OS1DjTwii4YqU2DtBXP2U_EyWwFxlE_zm5A2YV40BH1RxLDQwAuOXVYWUhJo49rQFSXtaozE4r-nbJ4ZktFu2t5YHe973zr986RTWzXSASKWMta2uGQa3imwtA9uNh4uxp2z5ZTB3UwQM8THsrYsuUe59qjdVtha2bqt5hOvKHhvSwxTbA43jnFR4fGS9ZRd0ePn6LQHCPfhFvDUAGVBvu4NEW_W0QQtnGEYfH-VADE67wDs6hzVuRNOPS5KWcZIyInhzsAhyPlRjUjjJ0kbDbGxYYgqgNyRry10l0Hd2Wh63qjxxB3PZ6n6XJEZx-7AKB2ZGRCyJYtyPytsH6s48E48FTyIrAMBhqHZ462eQuW1Euu0qnPb1cBfHhqp1CBjJ79FlZi2M-dSy8Teq0b0FaNetPOEI7tPtT67EVVL7l8jFsw0h0ZWJY=w1258-h943-no?authuser=1" class="memberImages" alt="This is me (Gavin Johnson) and our project idea man, the great Adam Handley!">
-		<p class="memberText"><b>This is Adam. He is a big fan of all things disney can cartoon. He is very much passionate in the interests of the club and possesses a limitless supply of imaginative potential for club activities.</b></p>
-	</div>
-	<hr>
-	<div class="member" id="Gavin">
-		<img src="https://lh3.googleusercontent.com/qnof3HqEeZWFmRi86N72m8IP54hqogkonXQ8AH8u0onIFvLXnG6dIM4z4I-I_ydthVbgPRTaSdI3gfJqhNWMJFo4oS6qSncthVl_DpGRu_kt69bzedRCaigN3ifHFWWzAuqMKoDA59O5wgg8noM9zHc1lmPil3Rdb1wgjJtQ-OK5f9W_PdSeehnBxnosVCcdkGPGT4rBWGoThPR7U13euqkV0XDN-0nPKJpGmd0EsrO00v_YwwJbQ7Rjlpa0gMgtFOVjotagM7LCb7zovx3kWkEAUnVx-d2XxtcZ1uqd1Ycf88IPyH5ZSa1j2tPOJB075D8EVajU_tEUKJGT4eoTmPySVAKOxTcioGG4S4nQ7LedxugpBXivYtg1DfaN0jC7lvmESri3W1aFDRjkkqERM6WcaHvNDwF01aurzLjHKt-BLo6bDoW3E1aGR-3xKXH5actdVe96EVTesovVegmKQvjVX0L6pWUTCQDn23qTXQTwCm0sIby2Vhoiy3pEpZFvwCBsFNOpF6Lc_GmXeGuDF4hE6ip-unpjxC-_wPMzJgvJIbHq5WVAoWQHr5xTN0SzuYMK4nU8JCH9FX8PAakzbq4zRf2xdMHODEnq33A7GnHwTVxWTsQIwZnYwFoQ9Suz-2q0h30sZ-slFMCE795099VERI4fVGriWaM0rqfsBAXBvScZZmzI5TvKXlEqSVt-V7F0GG1b644WugYUXDVR2C3v0PO6iKmOabjltrCEQxyjwpfMCvGVHm6EJHDBwBFfdYorG9ubUhTiGDjVrNsVxPGAhO9RCqj7v9cg=w708-h943-no?authuser=1" class="memberImages" alt="This is a picture of me - Gavin Johnson!">
-		<p class="memberText"><b>This is Gavin. He is a Computer Science major here at Murray State University. He usually is not present during club activities, as he has a lot of responsibilities. However, he does try to contribute where he can.</b></p>
-	</div>
-	<hr>
-	<div class="member" id="Beck">
-		<img src="https://th.bing.com/th/id/OIP.DkIrw-WQh6heewTazzoIwAAAAA?pid=ImgDet&rs=1" class="memberImages" alt="Our Faculty Advisor - Dr. Marc Beck!">
-		<p class="memberText"><b>And, finally, this is the faculty advisor of our organization, and master of all things programming and gaming, i.e. Dr. Beck. He holds the main interest in the Game Development track of the Computer Science department here at Murray State University. So, he always holds a collection of video gaming knowledge. He also has loads of academic responsibilities and is willing to assist his students when he can.</b></p>
-	</div>
+<div id="Games" class="tabcontent">
+	<h3>Games</h3>
+	<p>Please click <a href="msuSciFiGames.html">here</a> to see a list of games our website offers, made by us originally!</p>
+</div>
+<div id="Members" class="tabcontent">
+	<h3>Members</h3>
+	<p>Please click <a href="Members.html">here</a> to see a webpage containing the information of each of our members.</p>
+</div>
+<div id="Schedule" class="tabcontent">
+	<h3>Schedule</h3>
+	<p>Please click <a href="msuSciFiSchedule.html">here</a> to see a schedule of events of our club. This schedule will be updated as necessary.</p>
+</div>
+<div id="drBeckImg">
+<h2>We Have this Man!</h2>
+<img src="https://th.bing.com/th/id/OIP.DkIrw-WQh6heewTazzoIwAAAAA?pid=ImgDet&rs=1">
+<li>Programming Wizard</li>
+<li>The club Sponsor</li>
+<li>The Best Computer Science Professor</li>
+<p id="drBeckText">Dr. Marc Beck</p>
+</div>
+<div id="socialsAndOther">
+<h2><span style="text-decoration:  underline;">Club Socials:</span></h2>
+<li>Discord: <a href="https://discord.gg/PeZEfKee">MSU Sci-Fi Club Discord</a></li>
+<li>Facebook: Murray State SciFi Blub</li>
+<li>Instagram: msu_scifi_club</li>
+<li>Email: msu.scificlub@murraystate.edu</li>
+	<h2><span style="text-decoration:underline">Other Information:</span></h2>
+	<li>We meet in Room 552 In the Business Building at 4pm on Wednesday.</li>
+	<li>Our first meeting of the semester is always a game night & our yearly officer elections.</li>
+	<h2><span style="text-decoration:underline;"><b>Leadership:</b></span></h2>
+	<li><span style="text-decoration:underline;">President: </span>keeps order</li>
+	<li><span style="text-decoration:underline;">Vice President: </span>helps keep order</li>
+	<li><span style="text-decoration:underline;">Secretary: </span>maintains social media</li>
+	<li><span style="text-decoration:underline;">Treasurer: </span>Handles Money</li>
+</div>
+<div id="like">
+	<h2>Do you like:</h2>
+	<li>Anime / Manga?</li>
+	<li>Video Games?</li>
+	<li>Star Wars?</li>
+	<li>Cryptids?</li>
+	<li>Star Trek?</li>
+	<li>Magic the Gathering?</li>
+	<li>Dungeons and Dragons</li>
+	<li>Social Interaction?</li>
+</div>
+<div id="have">
+	<h2>We have:</h2>
+	<li>game nights</li>
+	<li>rant nights</li>
+	<li>Trivia Nights</li>
+	<li>Movie Nights</li>
+	<lI>Fact or Faked nights</lI>
+	<li>Halloween Costume Content</li>
+	<li>And More!</li>
+</div>
+<div id="joinFooter">
+	<h1><b>Join Today!</b></h1>
 </div>
 </body>
 </html>
